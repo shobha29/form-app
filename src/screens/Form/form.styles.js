@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
   addTaskBtn: {
     alignItems: 'center',
-    marginTop: verticalScale(10),
+    marginVertical: verticalScale(10),
   },
   disableBtn: {
     backgroundColor: colors.neutral60,

@@ -21,7 +21,7 @@ const RadioButton = ({
           style={[styles.radioCircle, isSelected && styles.selectedRadioCirle]}>
           {isSelected && <View style={styles.innerCircle} />}
         </View>
-        <Text>{item?.label}</Text>
+        <Text style={styles.radioItemText}>{item?.label}</Text>
       </TouchableOpacity>
     );
   };

@@ -1,7 +1,8 @@
 import React from 'react';
-import {Text, TextInput, View} from 'react-native';
-import {isEmpty} from 'lodash';
+import { Text, TextInput, View } from 'react-native';
+import { isEmpty } from 'lodash';
 import styles from './inputText.styles';
+import { colors } from '../../utils/colors';
 
 const InputText = ({
   title = '',
@@ -10,7 +11,7 @@ const InputText = ({
   isMultiLine = false,
   maxLength = 20,
   keyboardType = 'default',
-  onChangeText = () => {},
+  onChangeText = () => { },
 }) => {
   return (
     <View style={[styles.fieldContainer, isMultiLine && styles.multiLine]}>
@@ -29,6 +30,8 @@ const InputText = ({
         multiline={isMultiLine}
         maxLength={maxLength}
         keyboardType={keyboardType}
+        style={styles.inputTextStyle}
+        placeholderTextColor={colors.silverSand}
       />
     </View>
   );

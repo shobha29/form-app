@@ -33,7 +33,10 @@ const styles = StyleSheet.create({
   multiLine: {
     height: verticalScale(100),
     maxHeight: verticalScale(100)
-  }
+  },
+  inputTextStyle: {
+    color: colors.black,
+  },
 });
 
 export default styles;

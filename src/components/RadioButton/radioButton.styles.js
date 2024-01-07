@@ -1,9 +1,8 @@
-import {StyleSheet} from 'react-native';
-import {colors} from '../../utils/colors';
+import { StyleSheet } from 'react-native';
+import { colors } from '../../utils/colors';
 import {
   horizontalScale,
   moderateScale,
-  normalizeFont,
   verticalScale,
 } from '../../utils/dimensions';
 
@@ -46,6 +45,9 @@ const styles = StyleSheet.create({
     height: moderateScale(8),
     borderRadius: moderateScale(4),
     backgroundColor: colors.blue,
+  },
+  radioItemText: {
+    color: colors.black,
   },
 });
 
